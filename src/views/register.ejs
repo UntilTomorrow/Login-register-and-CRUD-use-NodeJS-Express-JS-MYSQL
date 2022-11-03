@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <!-- CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 30%, 96%)">
+        <div class="container">
+          <div class="row gx-lg-5 align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <h1 class="my-5 display-3 fw-bold ls-tight">
+                The best  <br />
+                <span class="text-primary">Heru Cahyo</span>
+              </h1>
+              <p style="color: hsl(217, 10%, 50.8%)">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+                quibusdam tempora at cupiditate quis eum maiores libero
+                veritatis? Dicta facilis sint aliquid ipsum atque?
+              </p>
+            </div>
+	<div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card">
+          <div class="card-body py-5 px-md-5">
+			<form action="/register/save" method="POST" class=" card">
+				<h2>Form Registrasi</h2>
+				<div class="form-group">
+					<label>Nama:</label>
+					<input type="text" name="username" class="form-control" placeholder="Masukan Nama" required>
+                </div>
+                <div class="form-group">
+					<label>Email:</label>
+					<input type="email" name="email" class="form-control" placeholder="Masukan Email" required>
+                </div>
+                <div class="form-group">
+					<label>Password:</label>
+					<input type="password" name="pass" class="form-control" placeholder="Masukan Password" required>
+                </div>                
+                <button type="submit" class="btn btn-primary">Daftar</button>
+                <a href="/login" class="btn btn-success">Login Sudah Memiliki Akun</a>
+			</form>
+		</div>  
+	</div>
+</div>  
+</div>  
+</div>
+</div> 
+
+</body>
+<style>
+    body,html {
+        font-family: Quicksand,sans-serif !important;
+        height:100%;
+        padding-top: 2rem;
+		background-color: #4b4a4a;
+    }
+    .card {
+		padding: 2%;
+		margin: 2%;
+	}
+    .btn {
+        margin-bottom: 10px;
+    }
+</style>
+</html>
