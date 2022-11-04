@@ -5,6 +5,7 @@ const profile = require('./controller-profile');
 const store = require('./controller-store');
 const absensi = require('./controller-absensi');
 const tambah = require('./controller-tambah');
+const edit = require('./controller-edit');
 
 module.exports ={
 	login,
@@ -13,5 +14,6 @@ module.exports ={
 	profile,
 	store,
 	absensi,
-	tambah
+	tambah,
+	edit
 };
