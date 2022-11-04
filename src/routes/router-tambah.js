@@ -6,5 +6,4 @@ const tambahController = require('../controllers').tambah;
 router.get('/profile', verifyUser.isLogin, profileController.profile);
 router.get('/', verifyUser.isLogin, tambahController.formtambah);
 router.post('/save', verifyUser.isLogin, tambahController.savetambah);
-router.post('/edit', verifyUser.isLogin, tambahController.edittambah);
 module.exports = router;
