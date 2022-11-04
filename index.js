@@ -13,6 +13,7 @@ const appRoutes = require('./src/routes/router-app');
 const storeRoutes = require('./src/routes/router-store');
 const absensiRoutes = require('./src/routes/router-absensi');
 const tambahRoutes = require('./src/routes/router-tambah');
+const editRoutes = require('./src/routes/router-edit');
 
 // Configurasi library session
 app.use(session({
@@ -49,6 +50,7 @@ app.use('/', appRoutes);
 app.use('/store', storeRoutes);
 app.use('/absensi', absensiRoutes);
 app.use('/tambah',tambahRoutes);
+app.use('/edit', editRoutes);
 
 
 //  port server
